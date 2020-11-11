@@ -8,7 +8,7 @@
   text-decoration: none;
   display: inline-block;
   border: none;
-  &--theme--white{
+  &__theme--white{
     background:#fff;
     color:$darkGreen ;
     &:hover{
@@ -16,7 +16,7 @@
       background: $darkGreen;
     }
   }
-  &--theme--geen{
+  &__theme--geen{
     background:$darkGreen;
     color:#fff ;
     &:hover{
@@ -24,7 +24,7 @@
       background: #fff;
     }
   }
-  &--theme--transparent{
+  &__theme--transparent{
     background: transparent;
     color: black;
     text-transform: none;

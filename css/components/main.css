@@ -343,28 +343,28 @@ img {
   display: inline-block;
   border: none;
 }
-.btn--theme--white {
+.btn__theme--white {
   background: #fff;
   color: #0b4d3c;
 }
-.btn--theme--white:hover {
+.btn__theme--white:hover {
   color: #fff;
   background: #0b4d3c;
 }
-.btn--theme--geen {
+.btn__theme--geen {
   background: #0b4d3c;
   color: #fff;
 }
-.btn--theme--geen:hover {
+.btn__theme--geen:hover {
   color: #0b4d3c;
   background: #fff;
 }
-.btn--theme--transparent {
+.btn__theme--transparent {
   background: transparent;
   color: black;
   text-transform: none;
 }
-.btn--theme--transparent:hover {
+.btn__theme--transparent:hover {
   color: #0b4d3c;
 }
 
@@ -887,13 +887,31 @@ img {
   color: #0b4d3c;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
 .social li {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  overflow: hidden;
 }
 
 .social-icon {
+  width: 30px;
+  overflow: hidden;
   margin-right: 10px;
 }
 .social-icon:last-child {
   margin-right: 0;
+}
+
+.vk-ic {
+  fill: #B3B3B3;
+  display: block;
+  width: 20px;
+}
+.vk-ic:hover {
+  fill: black;
 }

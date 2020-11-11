@@ -42,13 +42,39 @@
 
 // }
 .social{
+display: flex;
+align-items: center;
+  
+  //display: flex;
+  //justify-content: flex-end;
   li{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    overflow: hidden;
+
   }
 }
 .social-icon{
+  width: 30px;
+overflow: hidden;
   margin-right: 10px;
   &:last-child{
     margin-right: 0;
+  }
+}
+
+
+
+.vk-ic{
+  fill: #B3B3B3;
+  display: block;
+  width: 20px;
+
+
+
+  &:hover{
+    fill: black;
+
   }
 }
