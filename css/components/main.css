@@ -911,6 +911,8 @@ img {
   fill: #B3B3B3;
   display: block;
   width: 20px;
+  max-height: 30px;
+  overflow: hidden;
 }
 .vk-ic:hover {
   fill: black;
