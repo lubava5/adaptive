@@ -7,6 +7,9 @@
   @include phones{
    padding: 0;
     }
+    .input-error{
+     border-color: red;
+    }
 }
 .form__col{
   flex: 1;
