@@ -96,28 +96,50 @@ const textBlock=contentBlock.find(".team__content-block");
 const reqHeight=textBlock.height();
 container.addClass("active");
 contentBlock.height(reqHeight);
+
+
+
+//triangle.addClass('team__title2')
 }
 
 const closeEveryItem=(container)=>{
   const items=container.find('.team__content');
   const itemContainer=container.find(".team__item");
 
-  console.log(itemContainer);
+  //console.log(itemContainer);
   itemContainer.removeClass("active");
   items.height(0);
 
+  //const triangle=$('.team__title');
+  //triangle.removeClass('team__title2')
 }
+
+const  triangle=(tr)=>{
+  tr.addClass('team__title2')
+}
+
+const  triangle_rotate=(tr)=>{
+  tr.removeClass('team__title2')
+}
+
 $('.team__title').click(e=>{
   const $this=$(e.currentTarget);
   const container=$this.closest('.team');
 
-  const elemContainer=$this.closest('.team__item')
+  const elemContainer=$this.closest('.team__item');
+  
+const tr=$this;
+
+
 
   if(elemContainer.hasClass("active")){
     closeEveryItem(container);
+    triangle_rotate(tr);
+
   }else{
     closeEveryItem(container);
     openItem($this);
+    triangle(tr);
   }
 })
 
@@ -171,7 +193,7 @@ if(isValid){
     success:(data)=>{
 
       content.text(data.message)
-      console.log(data);
+      //console.log(data);
       
   $.fancybox.open({
     src:'#modal',
